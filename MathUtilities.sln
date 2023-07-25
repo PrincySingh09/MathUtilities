@@ -1,4 +1,38 @@
-﻿
+﻿Create table Products(
+
+PId int primary key identity (1,1),
+
+PName nvarchar(58) Not Null, PPrice float check (PPrice>=50 and PPrice <=100000),
+
+PCompany nvarchar(50),
+
+PQty int check (PQty>=1) Default 1)
+
+Insert into Products (PName, PPrice, PCompany, PQty)
+
+values
+
+('Galaxy 521,5eeee, 'Samsung',20),
+
+('iPhone 13',100000, Apple', 10),
+
+('Note 11, 20000, 'Redmi, 40),
+
+("Uze',50008, "HTC',20),
+
+('iPhone 12,80080, Apple,25),
+
+('Galaxy A52', 60000, Samsung,10),
+
+("Note 18,70008, 'Redmi', 12),
+
+('Galaxy 520', 88888, 'Samsung', 23),
+
+("iPhone 11,90000, Apple', 24),
+
+(U12,56880, 'HTC',18);
+
+select from Products
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
